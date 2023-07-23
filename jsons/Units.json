@@ -1,66 +1,173 @@
 [
 	{
-		"name": "Roirraw",
+		"name": "Roirraw",//哈卡虎战士
 		"unitType": "Sword",
 		"uniqueTo": "Upside-Down",
-		"replaces": "Warrior",
+		"replaces": "Warrior", //替代 勇士
 		"movement": 2,
 		"strength": 8,
 		"cost": 20,
         "obsoleteTech": "Metal Casting",
-		"promotions": ["Haka War Dance","[Jaguar] ability","Woodsman"],
+		"promotions": ["Haka War Dance",
+				"[Jaguar] ability",
+				"Woodsman"],
 		"uniques": ["May upgrade to [Spearman] through ruins-like effects"],
 		"upgradesTo": "Swordsman",
 		"attackSound": "nonmetalhit"
 	},
 	{
-		"name": "Rehcra",
+		"name": "Namsdrows", //莫霍克军团
+		"unitType": "Sword",
+		"uniqueTo": "Upside-Down",
+		"replaces": "Swordsman", //替代 剑士
+		"movement": 2,
+		"strength": 17,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+        "obsoleteTech": "Gunpowder",
+		"upgradesTo": "Longswordsman",
+		"uniques": ["Can build [Road] improvements on tiles",
+			"Can build [Fort] improvements on tiles"],
+		"hurryCostModifier": 20,
+		"promotions": ["[Mohawk Warrior] ability","Haka War Dance","[Jaguar] ability","Woodsman"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Namsdrowsgnol", //狂战武侍
+		"replaces": "Longswordsman", //替代 长剑士
+		"uniqueTo": "Upside-Down",
+		"unitType": "Sword",
+		"movement": 3,
+		"strength": 21,
+		"cost": 120,
+		"requiredTech": "Metal Casting",
+        "obsoleteTech": "Metallurgy",
+		"upgradesTo": "Musketman",
+		"requiredResource": "Iron",
+        "promotions": ["Shock I",
+        		"Great Generals II",
+        		"Amphibious", //两栖
+        		"[Mohawk Warrior] ability",
+        		"Haka War Dance",
+        		"[Jaguar] ability",
+        		"Woodsman"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Namteksum",//亲兵大方阵
+		"unitType": "Gunpowder",
+		"replaces": "Musketman", //替代 火枪手
+		"uniqueTo": "Upside-Down",
+		"movement": 3, //2, 按前身提升
+		"strength": 28,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+        "obsoleteTech": "Rifling",
+		"upgradesTo": "Rifleman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>",
+			"Ignores terrain cost"],
+		"promotions": ["Drill I",
+				"Shock I",
+        		"Great Generals II",
+        		"Amphibious", //两栖
+        		"[Mohawk Warrior] ability",
+        		"Haka War Dance",
+        		"[Jaguar] ability",
+        		"Woodsman",
+        		"[Janissary] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Namelfir", //极地禁军
+		"unitType": "Gunpowder",
+		"replaces": "Rifleman", //替代 来复枪兵
+		"uniqueTo": "Upside-Down",
+		"movement": 3, //2, 按前身提升
+		"strength": 34,
+		"cost": 200,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>",
+				"Ignores terrain cost"],
+		"promotions": ["[Norwegian Ski Infantry] ability",
+				"March",
+				"Drill I",
+				"Shock I",
+        		"Great Generals II",
+        		"Amphibious", //两栖
+        		"[Mohawk Warrior] ability",
+        		"Haka War Dance",
+        		"[Jaguar] ability",
+        		"Woodsman",
+        		"[Janissary] ability",
+				"Home Sweet Home"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Taerg Raw Yrtnafni",//菁英佣兵
+		"unitType": "Gunpowder",
+		"replaces": "Great War Infantry", //替代 一战步兵
+		"uniqueTo": "Upside-Down",
+		"movement": 3, //2, 按前身提升
+		"strength": 50,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		//"obsoleteTech": "Plastics", //永不过时
+		"upgradesTo": "Infantry",
+		"uniques": ["[+20]% Strength <when fighting in [Foreign Land] tiles>",
+				"[+50]% Strength <vs [Mounted] units>",
+				"Ignores terrain cost"],
+		"promotions": ["[Norwegian Ski Infantry] ability",
+				"March",
+				"Drill I",
+				"Shock I",
+        		"Great Generals II",
+        		"Amphibious", //两栖
+        		"[Mohawk Warrior] ability",
+        		"Haka War Dance",
+        		"[Jaguar] ability",
+        		"Woodsman",
+        		"[Janissary] ability",
+				"Home Sweet Home"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Rehcra", //射矛手
 		"unitType": "Archery",
 		"uniqueTo": "Upside-Down",
-		"replaces": "Archer",
+		"replaces": "Archer", //替代 弓箭手
 		"movement": 2,
 		"strength": 7,
 		"rangedStrength": 9,
 		"cost": 36,
 		"requiredTech": "Agriculture",
-        "obsoleteTech": "Construction",
+        //"obsoleteTech": "Construction",
+        "obsoleteTech": "Machinery", //修改为 长诸葛弩 出现后再过时
 		"upgradesTo": "Composite Bowman",
 		"promotions": ["Slinger Withdraw"],
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Yellag",
-		"unitType": "Melee Water",
+		"name": "Namwobssorc", //长诸葛弩
+		"unitType": "Archery",
 		"uniqueTo": "Upside-Down",
-		"movement": 3,
-		"strength": 7,
-		"cost": 40,
-		"uniques": ["Cannot enter ocean tiles"],
-		"upgradesTo": "Trireme",
-		"obsoleteTech": "Astronomy",
-		"attackSound": "nonmetalhit"
-	},
-	{
-		"name": "Emerirt",
-		"unitType": "Ranged Water",
-		"uniqueTo": "Upside-Down",
-		"replaces": "Trireme",
-		"movement": 4,
+		"movement": 2,
 		"strength": 13,
-		"rangedStrength": 10,
-		"cost": 45,
-		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles",
-			"[+50]% Strength <vs [Water] units>"],
-		"upgradesTo": "Galleass",
-		"obsoleteTech": "Astronomy",
+		"rangedStrength": 18,
+		"replaces": "Crossbowman", //替代 弩手
+		"cost": 120,
+		"requiredTech": "Machinery",
+        //"obsoleteTech": "Industrialization", //永不过时
+		"upgradesTo": "Gatling Gun",
+		"promotions": ["Slinger Withdraw","[Chu-Ko-Nu] ability","Extended Range"],
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Toirahc Rehcra",
+		"name": "Toirahc Rehcra", //象弓手
 		"unitType": "Archery",
 		"uniqueTo": "Upside-Down",
-		"replaces": "Chariot Archer",
+		"replaces": "Chariot Archer", //替代 战车射手
 		"movement": 5,
 		"strength": 9,
 		"rangedStrength": 11,
@@ -73,8 +180,103 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Namraeps",
-		"replaces": "Spearman",
+		"name": "Namesroh", //甲胄战象
+		"unitType": "Mounted",
+		"uniqueTo": "Upside-Down",
+		"replaces": "Horseman", //替代 骑手
+		"movement": 5,
+		"strength": 15,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+        "obsoleteTech": "Chivalry",
+		"upgradesTo": "Knight",
+		"uniques": ["Can move after attacking",
+			"No defensive terrain bonus",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			"[-25]% Strength <vs cities> <when attacking>"],
+		"promotions": ["Great Generals II"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Thgink", //铁骑征服者
+		"replaces": "Knight", //替代 骑士
+		"uniqueTo": "Upside-Down",
+		"unitType": "Archery",
+		"movement": 5,
+		"strength": 25,
+		"rangedStrength": 21,
+		"cost": 110,
+		"requiredTech": "Chivalry",
+        "obsoleteTech": "Military Science",
+		"upgradesTo": "Cavalry",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"Founds a new city <on foreign continents>",
+			"[+2] Sight"],
+        "promotions": ["[Conquistador] ability",
+        			"Great Generals I",
+        			"Great Generals II",
+        			"Quick Study"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Yrlavac", //哥萨克骠骑
+		"unitType": "Mounted",
+		"replaces": "Cavalry", //替代 
+		"uniqueTo": "Upside-Down",
+		"movement": 5, // 原为4,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combined Arms", //原为"Combustion", 改为坦克出现后过时
+		"requiredResource": "Horses",
+		"upgradesTo": "Landship",
+		"uniques": ["Can move after attacking",
+			"No defensive terrain bonus",
+			"[+50]% Strength <vs [Mounted] units>",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			//"[-33]% Strength <vs cities> <when attacking>", //前身没有因此删掉
+			//"Founds a new city <on foreign continents>", //感觉不好用，不加了
+			"[+2] Sight"], //原为+1
+		"promotions": ["[Cossack] ability",
+					"[Hussar] ability",
+					"[Conquistador] ability",
+        			"Great Generals I",
+        			"Great Generals II",
+        			"Quick Study"],
+		"attackSound": "horse"
+	},
+	{
+		"name": "Knat", //虎式重坦
+		"unitType": "Armored",
+		"uniqueTo": "Upside-Down",
+		"replaces": "Tank", //替代 坦克
+		"movement": 6,
+		"strength": 80,
+		"cost": 375,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Modern Armor",
+		"uniques": ["Can move after attacking",
+			"No defensive terrain bonus",
+			"[+50]% Strength <vs [Mounted] units>",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			//"Founds a new city <on foreign continents>", //感觉不好用，不加了
+			"[+2] Sight"],
+		"promotions": ["[Cossack] ability",
+					"[Hussar] ability",
+					"[Conquistador] ability",
+        			"Great Generals I",
+        			"Great Generals II",
+        			"Quick Study"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Namraeps", // 皮特克重锤长生军
+		"replaces": "Spearman", //替代 矛兵
 		"uniqueTo": "Upside-Down",
 		"unitType": "Sword",
 		"movement": 2,
@@ -90,9 +292,54 @@
 		"attackSound": "metalhit"
 	},
 	{
-		"name": "Tlupatac",
+		"name": "Namekip", //日耳曼双薪佣兵
+		"replaces": "Pikeman", //替代 长枪兵
+		"uniqueTo": "Upside-Down",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 16,
+		"cost": 45,
+		"requiredTech": "Civil Service",
+        "obsoleteTech": "Metallurgy",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>",
+			"Can move immediately once bought",
+			"[+300]% Strength <vs cities> <when attacking>",
+			"Earn [50]% of killed [Military] unit's [Strength] as [Faith]"],
+		"promotions":  ["[Persian Immortal] ability", "Cover I", "Pictish Courage"],
+		"upgradesTo": "Lancer",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Recnal", //西帕希刀骑兵
+		"unitType": "Mounted",
+		"replaces": "Lancer", //替代 枪骑兵
+		"uniqueTo": "Upside-Down",
+		"movement": 5,
+		"strength": 25,
+		"cost": 185,
+		"requiredTech": "Metallurgy",
+        //"obsoleteTech": "Combined Arms", //永不过时
+		"requiredResource": "Horses",
+		"uniques": ["Can move after attacking",
+			"No defensive terrain bonus",
+			"[+50]% Strength <vs [Mounted] units>",
+			"Can move immediately once bought",
+			"Earn [50]% of killed [Military] unit's [Strength] as [Faith]",
+			//"[-33]% Strength <vs cities> <when attacking>",//与前身的攻城能力冲抵
+			"[+1] Sight"],
+		"promotions": ["Formation I",
+				"[Sipahi] ability",
+				"[Hakkapeliitta] ability",
+				"[Persian Immortal] ability",
+				"Cover I",
+				"Pictish Courage"],
+		"upgradesTo": "Anti-Tank Gun",
+		"attackSound": "horse"
+	},
+	{
+		"name": "Tlupatac", //弩炮， 和罗马一模一样
 		"unitType": "Siege",
-		"replaces": "Catapult",
+		"replaces": "Catapult", //替代 投石车
 		"uniqueTo": "Upside-Down",
 		"movement": 2,
 		"strength": 8,
@@ -109,60 +356,9 @@
 		"attackSound": "throw"
 	},
 	{
-		"name": "Namsdrows",
-		"unitType": "Sword",
-		"uniqueTo": "Upside-Down",
-		"replaces": "Swordsman",
-		"movement": 2,
-		"strength": 17,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-        "obsoleteTech": "Gunpowder",
-		"upgradesTo": "Longswordsman",
-		"uniques": ["Can build [Road] improvements on tiles",
-			"Can build [Fort] improvements on tiles"],
-		"hurryCostModifier": 20,
-		"promotions": ["[Mohawk Warrior] ability"],
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Namesroh",
-		"unitType": "Mounted",
-		"uniqueTo": "Upside-Down",
-		"replaces": "Horseman",
-		"movement": 5,
-		"strength": 15,
-		"cost": 75,
-		"requiredTech": "Horseback Riding",
-        "obsoleteTech": "Chivalry",
-		"upgradesTo": "Knight",
-		"uniques": ["Can move after attacking",
-			"No defensive terrain bonus",
-			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-			"[-25]% Strength <vs cities> <when attacking>"],
-		"promotions": ["Great Generals II"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-	{
-		"name": "Namwobssorc",
-		"unitType": "Archery",
-		"uniqueTo": "Upside-Down",
-		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 18,
-		"replaces": "Crossbowman",
-		"cost": 120,
-		"requiredTech": "Machinery",
-        "obsoleteTech": "Industrialization",
-		"upgradesTo": "Gatling Gun",
-		"promotions": ["[Chu-Ko-Nu] ability","Extended Range"],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Tehcubert",
+		"name": "Tehcubert", //火厢抛石车
 		"unitType": "Siege",
-		"replaces": "Trebuchet",
+		"replaces": "Trebuchet", //替代 抛石机
 		"uniqueTo": "Upside-Down",
 		"movement": 2,
 		"strength": 12,
@@ -177,59 +373,37 @@
 		"attackSound": "throw"
 	},
 	{
-		"name": "Namsdrowsgnol",
-		"replaces": "Longswordsman",
+		"name": "Yellag", //桨帆船
+		"unitType": "Melee Water",
 		"uniqueTo": "Upside-Down",
-		"unitType": "Sword",
 		"movement": 3,
-		"strength": 21,
-		"cost": 120,
-		"requiredTech": "Metal Casting",
-        "obsoleteTech": "Metallurgy",
-		"upgradesTo": "Musketman",
-		"requiredResource": "Iron",
-        "promotions": ["Shock I", "Great Generals II","Amphibious"],
-		"attackSound": "metalhit"
+		"strength": 7,
+		"cost": 40,
+		"uniques": ["Cannot enter ocean tiles"],
+		"upgradesTo": "Trireme",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
 	},
 	{
-		"name": "Namekip",
-		"replaces": "Pikeman",
+		"name": "Emerirt", //五桨德罗蒙
+		"unitType": "Ranged Water",
 		"uniqueTo": "Upside-Down",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 16,
+		"replaces": "Trireme", //替代 
+		"movement": 4,
+		"strength": 13,
+		"rangedStrength": 10,
 		"cost": 45,
-		"requiredTech": "Civil Service",
-        "obsoleteTech": "Metallurgy",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>",
-			"Can move immediately once bought"],
-		"upgradesTo": "Lancer",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Thgink",
-		"replaces": "Knight",
-		"uniqueTo": "Upside-Down",
-		"unitType": "Archery",
-		"movement": 5,
-		"strength": 25,
-		"rangedStrength": 21,
-		"cost": 110,
-		"requiredTech": "Chivalry",
-        "obsoleteTech": "Military Science",
-		"upgradesTo": "Cavalry",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>",
-			"Can move after attacking",
-			"No defensive terrain bonus",
-			"Founds a new city <on foreign continents>",
-			"[+2] Sight"],
-        "promotions": ["[Conquistador] ability", "Great Generals I", "Quick Study"],
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles",
+			"[+50]% Strength <vs [Water] units>"],
+		"upgradesTo": "Galleass",
+		"obsoleteTech": "Astronomy",
 		"attackSound": "arrow"
 	},
 	{
-		"name": "Levarac",
+		"name": "Levarac", //龟甲轻帆船
 		"unitType": "Melee Water",
-		"replaces": "Caravel",
+		"replaces": "Caravel", //替代 轻帆船
 		"uniqueTo": "Upside-Down",
 		"movement": 4,
 		"strength": 36,
@@ -243,25 +417,9 @@
 		"attackSound": "cannon"
 	},
 	{
-		"name": "Namteksum",
-		"unitType": "Gunpowder",
-		"replaces": "Musketman",
-		"uniqueTo": "Upside-Down",
-		"movement": 2,
-		"strength": 28,
-		"cost": 150,
-		"requiredTech": "Gunpowder",
-        "obsoleteTech": "Rifling",
-		"upgradesTo": "Rifleman",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>",
-			"Ignores terrain cost"],
-		"promotions": ["[Janissary] ability", "Drill I"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Reetavirp",
+		"name": "Reetavirp", //皮特海恩舰（就，一模一样啊）
 		"unitType": "Melee Water",
-		"replaces": "Privateer",
+		"replaces": "Privateer", //替代 私掠船
 		"uniqueTo": "Upside-Down",
 		"movement": 5,
 		"strength": 25,
@@ -273,9 +431,9 @@
 		"attackSound": "cannon"
 	},
 	{
-		"name": "Etagirf",
+		"name": "Etagirf", //皇家主力舰
 		"unitType": "Ranged Water",
-		"replaces": "Frigate",
+		"replaces": "Frigate", //替代 护卫舰
 		"uniqueTo": "Upside-Down",
 		"movement": 5,
 		"strength": 30,
@@ -290,61 +448,9 @@
 		"attackSound": "cannon"
 	},
 	{
-		"name": "Recnal",
-		"unitType": "Mounted",
-		"replaces": "Lancer",
-		"uniqueTo": "Upside-Down",
-		"movement": 5,
-		"strength": 25,
-		"cost": 185,
-		"requiredTech": "Metallurgy",
-        "obsoleteTech": "Combined Arms",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking",
-			"No defensive terrain bonus",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"[+1] Sight"],
-		"promotions": ["Formation I", "[Sipahi] ability", "[Hakkapeliitta] ability"],
-		"upgradesTo": "Anti-Tank Gun",
-		"attackSound": "horse"
-	},
-	{
-		"name": "Namelfir",
-		"unitType": "Gunpowder",
-		"replaces": "Rifleman",
-		"uniqueTo": "Upside-Down",
-		"movement": 2,
-		"strength": 34,
-		"cost": 200,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
-		"promotions": ["[Norwegian Ski Infantry] ability", "March", "Drill I","Home Sweet Home"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Yrlavac",
-		"unitType": "Mounted",
-		"replaces": "Cavalry",
-		"uniqueTo": "Upside-Down",
-		"movement": 4,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"upgradesTo": "Landship",
-		"uniques": ["Can move after attacking",
-			"No defensive terrain bonus",
-			"[-33]% Strength <vs cities> <when attacking>",
-			"[+1] Sight"],
-		"promotions": ["[Cossack] ability", "[Hussar] ability"],
-		"attackSound": "horse"
-	},
-	{
-		"name": "Rethgif",
+		"name": "Rethgif", //零式战机
 		"unitType": "Fighter",
-		"replaces": "Fighter",
+		"replaces": "Fighter", //替代 战斗机
 		"uniqueTo": "Upside-Down",
 		"upgradesTo": "Jet Fighter",
 		"movement": 1,
@@ -361,15 +467,15 @@
 		"attackSound": "machinegun"
 	},
 	{
-		"name": "Rebmob",
+		"name": "Rebmob", //超级空中堡垒
 		"unitType": "Bomber",
-		"replaces": "Bomber",
+		"replaces": "Bomber", //替代 轰炸机
 		"uniqueTo": "Upside-Down",
 		"upgradesTo": "Stealth Bomber",
 		"movement": 1,
 		"strength": 70,
 		"rangedStrength": 70,
-		"range": 10,
+		"range": 12,//原为10
 		"cost": 375,
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
@@ -377,39 +483,10 @@
 		"attackSound": "bombing"
 	},
 	{
-		"name": "Taerg Raw Yrtnafni",
-		"unitType": "Gunpowder",
-		"replaces": "Great War Infantry",
-		"uniqueTo": "Upside-Down",
-		"movement": 2,
-		"strength": 50,
-		"cost": 320,
-		"requiredTech": "Replaceable Parts",
-		"obsoleteTech": "Plastics",
-		"upgradesTo": "Infantry",
-		"uniques": ["[+20]% Strength <when fighting in [Foreign Land] tiles>"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Knat",
-		"unitType": "Armored",
-		"uniqueTo": "Upside-Down",
-		"replaces": "Tank",
-		"movement": 6,
-		"strength": 80,
-		"cost": 375,
-		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
-		"upgradesTo": "Modern Armor",
-		"uniques": ["Can move after attacking",
-			"No defensive terrain bonus"],
-		"attackSound": "tankshot"
-	},
-	{
-		"name": "Taerg Lareneg",
+		"name": "Taerg Lareneg", //天可汗
 		"unitType": "Civilian",
 		"uniqueTo": "Upside-Down",
-		"replaces": "Great General",
+		"replaces": "Great General", //替代 大军事家
 		"uniques": ["Empire enters a [8]-turn Golden Age <by consuming this unit>",
 			"[+15]% Strength bonus for [Military] units within [2] tiles",
 			"All adjacent units heal [+15] HP when healing",
