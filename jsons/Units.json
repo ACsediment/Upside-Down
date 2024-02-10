@@ -448,10 +448,11 @@
 		"attackSound": "cannon"
 	},
 	{
-		"name": "Dreadnought", //添加皇家海军无畏舰。目的：允许战列舰升级为导弹巡洋舰
+		//"name": "Dreadnought", //添加皇家海军无畏舰。目的：允许战列舰升级为导弹巡洋舰
+		"name": "Battleship",
 		"unitType": "Ranged Water",
-		"replaces": "Battleship", //替代 战列舰
-		"uniqueTo": "Upside-Down",
+		//"replaces": "Battleship", //替代 战列舰
+		//"uniqueTo": "Upside-Down",
 		"movement": 5,
 		"strength": 55,
 		"rangedStrength": 55,
