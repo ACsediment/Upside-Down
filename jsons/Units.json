@@ -448,6 +448,25 @@
 		"attackSound": "cannon"
 	},
 	{
+		"name": "Dreadnought", //添加皇家海军无畏舰。目的：允许战列舰升级为导弹巡洋舰
+		"unitType": "Ranged Water",
+		"replaces": "Battleship", //替代 战列舰
+		"uniqueTo": "Upside-Down",
+		"movement": 5,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 3,
+		"cost": 375,
+		"requiredResource": "Oil",
+		"requiredTech": "Electronics",
+		"uniques": ["Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns",
+		"upgradesTo": "Missile Cruiser",
+		"obsoleteTech": "Robotics" //导弹巡洋舰出现后过期
+		// Now it does actually upgrade to Missile Cruisers
+	},
+	{
 		"name": "Rethgif", //零式战机
 		"unitType": "Fighter",
 		"replaces": "Fighter", //替代 战斗机
