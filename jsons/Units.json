@@ -23,7 +23,8 @@
 		"rangedStrength": 9,
 		"cost": 36,
 		"requiredTech": "Agriculture",
-        "obsoleteTech": "Construction",
+        //"obsoleteTech": "Construction",
+		"obsoleteTech": "Machinery", //Until the next unique unit is avaiable
 		"upgradesTo": "Composite Bowman",
 		"promotions": ["[Rehcra] ability"],
 		"attackSound": "arrow"
@@ -122,7 +123,7 @@
 		"uniques": ["Can build [Road] improvements on tiles",
 			"Can build [Fort] improvements on tiles"],
 		"hurryCostModifier": 20,
-		"promotions": ["[Namsdrows] ability"],
+		"promotions": ["[Roirraw] ability", "Woodsman", "[Namsdrows] ability"],
 		"attackSound": "metalhit"
 	},
 	{
@@ -154,9 +155,9 @@
 		"replaces": "Crossbowman",
 		"cost": 120,
 		"requiredTech": "Machinery",
-        "obsoleteTech": "Industrialization",
+        //"obsoleteTech": "Industrialization", //Keep the last unique unit in the tech tree 
 		"upgradesTo": "Gatling Gun",
-		"promotions": ["[Namwobssorc] ability", "Extended Range"],
+		"promotions": ["[Rehcra] ability", "[Namwobssorc] ability", "Extended Range"],
 		"attackSound": "arrow"
 	},
 	{
@@ -189,7 +190,12 @@
 		"upgradesTo": "Musketman",
 		"requiredResource": "Iron",
 		"uniques": ["Can instantly construct a [Fishing Boats] improvement"],
-        "promotions": ["Shock I", "Great Generals II", "Amphibious"],
+        "promotions": ["[Roirraw] ability", 
+			"Woodsman", 
+			"[Namsdrows] ability", 
+			"Shock I", 
+			"Great Generals II", 
+			"Amphibious"],
 		"attackSound": "metalhit"
 	},
 	{
@@ -204,6 +210,7 @@
         "obsoleteTech": "Metallurgy",
 		"uniques": ["[+50]% Strength <vs [Mounted] units>",
 			"Can move immediately once bought"],
+		"promotions":  ["[Namraeps] ability", "Cover I"],
 		"upgradesTo": "Lancer",
 		"attackSound": "metalhit"
 	},
@@ -224,7 +231,11 @@
 			"No defensive terrain bonus",
 			"Founds a new city <on foreign continents>",
 			"[+2] Sight"],
-        "promotions": ["[Thgink] ability", "Great Generals I", "Quick Study"],
+        "promotions": ["Accuracy I",
+			"Great Generals I", 
+			"Great Generals II",
+			"[Thgink] ability",
+			"Quick Study"],
 		"attackSound": "arrow"
 	},
 	{
@@ -256,7 +267,14 @@
 		"upgradesTo": "Rifleman",
 		"uniques": ["[+50]% Strength <vs [Mounted] units>",
 			"Ignores terrain cost"],
-		"promotions": ["[Namteksum] ability", "Drill I"],
+		"promotions": ["[Roirraw] ability", 
+			"Woodsman", 
+			"[Namsdrows] ability", 
+			"Shock I", 
+			"Great Generals II", 
+			"Amphibious", 
+			"[Namteksum] ability", 
+			"Drill I"],
 		"attackSound": "shot"
 	},
 	{
@@ -298,13 +316,15 @@
 		"strength": 25,
 		"cost": 185,
 		"requiredTech": "Metallurgy",
-        "obsoleteTech": "Combined Arms",
+        //"obsoleteTech": "Combined Arms",//Keep the last unique unit in the tech tree
 		"requiredResource": "Horses",
 		"uniques": ["Can move after attacking",
 			"No defensive terrain bonus",
 			"[-33]% Strength <vs cities> <when attacking>",
 			"[+1] Sight"],
-		"promotions": ["[Recnal] ability"],
+		"promotions": ["[Namraeps] ability", 
+			"Cover I", 
+			"[Recnal] ability"],
 		"upgradesTo": "Anti-Tank Gun",
 		"attackSound": "horse"
 	},
@@ -319,7 +339,16 @@
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Great War Infantry",
-		"promotions": ["[Namelfir] ability", "March", "Drill I"],
+		"promotions": ["[Roirraw] ability", 
+			"Woodsman", 
+			"[Namsdrows] ability", 
+			"Shock I", 
+			"Great Generals II", 
+			"Amphibious", 
+			"[Namteksum] ability", 
+			"Drill I",
+			"[Namelfir] ability", 
+			"March"],
 		"attackSound": "shot"
 	},
 	{
@@ -331,14 +360,20 @@
 		"strength": 34,
 		"cost": 225,
 		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
+		//"obsoleteTech": "Combustion", 
+		"obsoleteTech": "Combined Arms", //Until the next unique unit is avaiable
 		"requiredResource": "Horses",
 		"upgradesTo": "Landship",
 		"uniques": ["Can move after attacking",
 			"No defensive terrain bonus",
 			"[-33]% Strength <vs cities> <when attacking>",
 			"[+1] Sight"],
-		"promotions": ["[Yrlavac] ability"],
+		"promotions": ["Accuracy I",
+			"Great Generals I", 
+			"Great Generals II",
+			"[Thgink] ability",
+			"Quick Study",
+			"[Yrlavac] ability"],
 		"attackSound": "horse"
 	},
 	{
@@ -385,9 +420,19 @@
 		"strength": 50,
 		"cost": 320,
 		"requiredTech": "Replaceable Parts",
-		"obsoleteTech": "Plastics",
+		//"obsoleteTech": "Plastics", //Keep the last unique unit in the tech tree
 		"upgradesTo": "Infantry",
 		"uniques": ["[+20]% Strength <when fighting in [Foreign Land] tiles>"],
+		"promotions": ["[Roirraw] ability", 
+			"Woodsman", 
+			"[Namsdrows] ability", 
+			"Shock I", 
+			"Great Generals II", 
+			"Amphibious", 
+			"[Namteksum] ability", 
+			"Drill I",
+			"[Namelfir] ability", 
+			"March"],
 		"attackSound": "shot"
 	},
 	{
@@ -403,6 +448,12 @@
 		"upgradesTo": "Modern Armor",
 		"uniques": ["Can move after attacking",
 			"No defensive terrain bonus"],
+		"promotions": ["Accuracy I",
+			"Great Generals I", 
+			"Great Generals II",
+			"[Thgink] ability",
+			"Quick Study",
+			"[Yrlavac] ability"],
 		"attackSound": "tankshot"
 	},
 	{
